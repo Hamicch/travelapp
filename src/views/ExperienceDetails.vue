@@ -1,6 +1,5 @@
 <template>
     <section>
-        <h2>Experiences</h2>
         <h2>{{ experience.name }}</h2>
         <div class="experience-details">
             <img :src="require(`@/assets/${experience.image}`)" :alt="experience.name" />
@@ -26,7 +25,7 @@ export default {
     computed: {
         destination() {
             return store.destinations.find(
-                destination => destination.experience.slug === this.slug
+                destination => destination.slug === this.slug
             );
         },
         experience() {
@@ -49,6 +48,7 @@ img {
 .experience-details {
     display: flex;
     justify-content: space-between;
+    padding: 40px 0;
 }
 
 p {

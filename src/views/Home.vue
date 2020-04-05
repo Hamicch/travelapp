@@ -49,8 +49,10 @@ img {
   justify-content: space-between;
 }
 
-.destinations h2 {
+.destinations a {
   color: rgb(63, 184, 184);
   text-decoration: none;
 }
+
+
 </style>
